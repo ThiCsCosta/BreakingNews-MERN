@@ -47,4 +47,3 @@ Method HTTP
 ```bash
 git clone https://github.com/usuario/breakingnews-api.git
 
-STACKS usadas
