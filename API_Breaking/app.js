@@ -1,8 +1,9 @@
 const express = require('express');
 const app = express();
+const port = 3000;
+const userRoute = require("./src/routes/user.route");
 
-app.get('/',  (req, res) => {
-  res.send('Hello World!!');
-});
-
-app.listen(3000);
+//Lendo arquivos JSON
+app.use(express.json());
+app.use("/user", userRoute);
+app.listen(port, () => console.log(`servidor rodadando na porta ${port}`));
